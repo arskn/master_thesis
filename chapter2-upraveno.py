@@ -1,6 +1,6 @@
 """
 REFERENCES: [1] - Christof Beirle and Gregor Leander - New instances of quadratic APN functions
-			[2] - Christof Beirle, Marcus Brinkmann and Gregor Leander - Linearly self-equivalent APN permutations in small dimention
+	    [2] - Christof Beirle, Marcus Brinkmann and Gregor Leander - Linearly self-equivalent APN permutations in small dimention
 """
 
 
