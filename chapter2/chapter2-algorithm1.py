@@ -21,7 +21,6 @@ def Generate_Sbox(n) :
 # function for generating 2-dimensional list "P", which includes 2**n permutations
 def Generate_P(n):
 	P = []
-	random.seed(1) #TODO REMOVE
 	element_of_P = []	
 	for j in range(0,2**n):
 		element_of_P.append(j)
