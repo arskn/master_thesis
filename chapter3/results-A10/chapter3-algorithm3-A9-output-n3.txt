@@ -1,0 +1,179 @@
+Attachment A.10 for n=3
+
+For dimension 3 we founded 4 RCF matrices. They are: 
+Order of the RCF matrix: 2
+Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Order of the RCF matrix: 3
+Polynomials of comapnions matrices: [Poly(x^3 + 1, GF(2))]
+[0, 0, 1]
+[1, 0, 0]
+[0, 1, 0]
+
+Order of the RCF matrix: 7
+Polynomials of comapnions matrices: [Poly(x^3 + x^2 + 1, GF(2))]
+[0, 0, 1]
+[1, 0, 0]
+[0, 1, 1]
+
+Order of the RCF matrix: 7
+Polynomials of comapnions matrices: [Poly(x^3 + x + 1, GF(2))]
+[0, 0, 1]
+[1, 0, 1]
+[0, 1, 0]
+
+-------------------------------- 
+We founded 12 equivalence classes. 
+We founded 4 tuples such that ord(A)=ord(B)=p for some prime p. 
+We founded 4 tuples such that ord(A)=p for some prime p and B=I_3. 
+We founded 4 tuples such that A=I_3 and ord(B)=p for some prime p. 
+They are: 
+
+-------------------------------------------------------------------------------- 
+Equivalence classes where ord(A)=ord(B) is prime. 
+
+Order of the tuple: 2
+Polynomials of companion matrices: 
+[Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
+[Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
+(1, 0, 0)
+(0, 0, 1)
+(0, 1, 0)
+
+(1, 0, 0)
+(0, 0, 1)
+(0, 1, 0)
+
+Order of the tuple: 3
+Polynomials of companion matrices: 
+[Poly(x^3 + 1, GF(2))]
+[Poly(x^3 + 1, GF(2))]
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 0)
+
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 0)
+
+Order of the tuple: 7
+Polynomials of companion matrices: 
+[Poly(x^3 + x^2 + 1, GF(2))]
+[Poly(x^3 + x^2 + 1, GF(2))]
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 1)
+
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 1)
+
+Order of the tuple: 7
+Polynomials of companion matrices: 
+[Poly(x^3 + x + 1, GF(2))]
+[Poly(x^3 + x^2 + 1, GF(2))]
+(0, 0, 1)
+(1, 0, 1)
+(0, 1, 0)
+
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 1)
+
+-------------------------------------------------------------------------------- 
+Equivalence classes where ord(A) is prime and B is identity matrix. 
+
+Order of the matrix A: 2
+Polynomials of companion matrices in matrix A: 
+[Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
+(1, 0, 0)
+(0, 0, 1)
+(0, 1, 0)
+
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
+Order of the matrix A: 3
+Polynomials of companion matrices in matrix A: 
+[Poly(x^3 + 1, GF(2))]
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 0)
+
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
+Order of the matrix A: 7
+Polynomials of companion matrices in matrix A: 
+[Poly(x^3 + x^2 + 1, GF(2))]
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 1)
+
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
+Order of the matrix A: 7
+Polynomials of companion matrices in matrix A: 
+[Poly(x^3 + x + 1, GF(2))]
+(0, 0, 1)
+(1, 0, 1)
+(0, 1, 0)
+
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
+-------------------------------------------------------------------------------- 
+Equivalence classes where A is identity matrix and ord(B) is prime. 
+
+Order of the matrix B: 2
+Polynomials of companion matrices in matrix B: 
+[Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
+(1, 0, 0)
+(0, 0, 1)
+(0, 1, 0)
+
+Order of the matrix B: 3
+Polynomials of companion matrices in matrix B: 
+[Poly(x^3 + 1, GF(2))]
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 0)
+
+Order of the matrix B: 7
+Polynomials of companion matrices in matrix B: 
+[Poly(x^3 + x^2 + 1, GF(2))]
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
+(0, 0, 1)
+(1, 0, 0)
+(0, 1, 1)
+
+Order of the matrix B: 7
+Polynomials of companion matrices in matrix B: 
+[Poly(x^3 + x + 1, GF(2))]
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
+(0, 0, 1)
+(1, 0, 1)
+(0, 1, 0)
+
