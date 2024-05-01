@@ -1,11 +1,11 @@
 # Attachment A5
 
-# All founded functions using algorithm "chapter2-algorithm1-A4.py" for n=7 from the subsection 2.3.2 of the thesis.
+# All found functions using algorithm "chapter2-algorithm1-A4.py" for n=7 from the subsection 2.3.2 of the thesis.
 
 """
 The algorithm run with parametr for dimension equal to: 7
-The number of founded functions: 2
-The founded functions are:
+The number of found functions: 2
+The found functions are:
 """
 
 
