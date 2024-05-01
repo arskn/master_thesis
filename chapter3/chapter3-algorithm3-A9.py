@@ -1,12 +1,17 @@
 """
-Attachment A9
+--------------
+Attachment A.9
+--------------
 
 Algorithm 3 - Search for linear-equivalence classes
 
 REFERENCES: Chapter 3 of the thesis
-            [8] - LPP-crypto/sboxu: Tools for studying S-boxes (https://github.com/lpp-crypto/sboxU)
-            [9] - Christof Beirle and Gregor Leander - New instances of quadratic APN functions
-            [10] - Christof Beirle, Marcus Brinkmann and Gregor Leander - Linearly self-equivalent APN permutations in small dimention
+            [2] - Christof Beirle and Gregor Leander - New instances of quadratic APN functions
+            [3] - Christof Beirle, Marcus Brinkmann and Gregor Leander - Linearly self-equivalent APN permutations in small dimention
+
+REQUIREMENTS:  - Python (version 3.12.2 was used), Python Software Foundation, https://www.python.org
+               - Sage, the Sage MAthematical Software System (version 9.0 was used), Sage Developers, https://www.sagemath.org
+			   - Cython Module for Python, Cython Developers, https://cython.readthedocs.io/en/latest/index.html
 """
 
 # package for math over finite field
@@ -17,27 +22,6 @@ import itertools
 
 # defining finite field of 2 elements
 GF = galois.GF(2**1)
-
-
-
-# function for checking if given array includes polynomial of degree zero
-# INPUT:  list of polynomials in which each element is polynomial from GF
-# OUTPUT: 0/1 
-#def Is_There_Degree_Zero_Polynomial(polynomials):
-#    for i in range(len(polynomials)):
-#        if (galois.Poly([1], field=GF) == (polynomials[i])):
-#            return(1)
-#    return(0)
-
-
-# function for checking if given array includes zero polynomial
-# INPUT:  list of polynomials in which each element is polynomial from GF
-# OUTPUT: 0/1 
-#def is_there_zero_polynomial(polynomials):
-#    for i in range(len(polynomials)):
-#        if (galois.Poly([0], field=GF) == (polynomials[i])):
-#           return(1)
-#    return(0)
 
 
 # function for generating all possible companion matrices for given size
@@ -322,7 +306,7 @@ def Select_Matrices_With_Prime_Order(dimension,matrices):
             multiplication_matrix = multiplication_matrix@matrix_in_GF
             order = order +1
             if order == limit:
-                print("ERROR PRI MOCNENI")
+                print("ERROR")
         if (Is_Number_Prime_Or_One(order)==1):
             counter = counter +1
             output_matrices.append(matrix)
@@ -371,7 +355,7 @@ def Remove_Identity_Matrix(matrices, orders, polynomials):
     return(output_matrices,output_orders,output_polynomials)
 
 
-# function which prints founded RCF matrices with their orders and coresponding polynomials to the file "chapter3-output.txt" 
+# function which prints found RCF matrices with their orders and coresponding polynomials to the file "chapter3-output.txt" 
 # INPUT:  - list "matrices" which contains RCF matrices in the form of GF
 #         - list "orders" which contains orders of the matrices in the list "matrices"
 #         - list "polynomials" which contains polynomials which corespond to the companion matrices which forms the given matrices
@@ -379,7 +363,7 @@ def Print_Founded_RCF_Matrices_Of_Prime_Order(matrices, orders, polynomials,dime
     with open('chapter3-output.txt','w') as output_file:
         output_file.write('For dimension ')
         output_file.write(str(dimension))
-        output_file.write(' we founded ')
+        output_file.write(' we found ')
         output_file.write(str(len(matrices)))
         output_file.write(' RCF matrices. They are: \n')
     for i in range(len(matrices)):
@@ -452,12 +436,12 @@ def Select_Tuples_Of_RCF_Matrices_Up_To_Power_Similarity(all_prime_orders_tuples
                 for second_position in range(first_position+1,len(all_tuples_of_given_order)):
                     if (is_power_equivalent[second_position]==0):
                         i = 1
-                        founded = 0
-                        while ((i<order) & (founded == 0)):
+                        found = 0
+                        while ((i<order) & (found == 0)):
                             if((all_tuples_of_given_order[first_position][0]**i).is_similar(all_tuples_of_given_order[second_position][0])&
                             (all_tuples_of_given_order[first_position][1]**i).is_similar(all_tuples_of_given_order[second_position][1])):
                                 is_power_equivalent[second_position] = 1
-                                founded = 1
+                                found = 1
                             i = i+1
                 not_power_similar_RCF.append([all_tuples_of_given_order[first_position][0],all_tuples_of_given_order[first_position][1]])
                 coresponding_orders.append(order)
@@ -465,7 +449,7 @@ def Select_Tuples_Of_RCF_Matrices_Up_To_Power_Similarity(all_prime_orders_tuples
     return(not_power_similar_RCF, coresponding_orders, coresponding_polynomials)
 
 
-# function which prints founded RCF matrices with their orders and coresponding polynomials to the file "chapter3-output.txt" 
+# function which prints found RCF matrices with their orders and coresponding polynomials to the file "chapter3-output.txt" 
 # INPUT:  - list "matrices" which contains RCF matrices in the form of GF
 #         - list "orders" which contains orders of the matrices in the list "matrices"
 #         - list "polynomials" which contains polynomials which corespond to the companion matrices which forms the given matrices
@@ -473,18 +457,18 @@ def Print_Tuples(matrices, orders, polynomials, RCF_matrices, orders_of_RCF_matr
     identity_matrix = Create_Identity_Matrix(dimension)
     with open('chapter3-output.txt','a') as output_file:
         output_file.write('-------------------------------- \n')
-        output_file.write('We founded ')
+        output_file.write('We have found ')
         output_file.write(str(len(matrices)+len(RCF_matrices)+len(RCF_matrices)))
         output_file.write(' equivalence classes. \n')
-        output_file.write('We founded ')
+        output_file.write('We have found ')
         output_file.write(str(len(matrices)))
         output_file.write(' tuples such that ord(A)=ord(B)=p for some prime p. \n')
-        output_file.write('We founded ')
+        output_file.write('We have found ')
         output_file.write(str(len(RCF_matrices)))
         output_file.write(' tuples such that ord(A)=p for some prime p and B=I_')
         output_file.write(str(dimension))
         output_file.write('. \n')
-        output_file.write('We founded ')
+        output_file.write('We have found ')
         output_file.write(str(len(RCF_matrices)))
         output_file.write(' tuples such that A=I_')
         output_file.write(str(dimension))
@@ -572,7 +556,7 @@ RCF_matrices, polynomials_for_RCF, orders_of_RCF = Block_Diagonal_Matrices(n)
 finite_field_matrices = Convert_To_Finite_Field(RCF_matrices)
 # remove identity matrix
 RCF_matrices, orders_of_RCF, polynomials_for_RCF = Remove_Identity_Matrix(RCF_matrices, orders_of_RCF, polynomials_for_RCF)
-#print founded matrices
+#print found matrices
 Print_Founded_RCF_Matrices_Of_Prime_Order(RCF_matrices,orders_of_RCF,polynomials_for_RCF,n)
 
 # import sage.all (we cannot import it earlier because during the programming of this algorithm the sage.all wasn't used in the begging, thus if we import it in the beganing,
