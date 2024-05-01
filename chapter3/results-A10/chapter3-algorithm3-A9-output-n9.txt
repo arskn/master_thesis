@@ -1,6 +1,6 @@
 Attachment A.10 for n=9
 
-For dimension 9 we founded 53 RCF matrices. They are: 
+For dimension 9 we have found 53 RCF matrices. They are: 
 Order of the RCF matrix: 2
 Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
 [1, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -638,10 +638,10 @@ Polynomials of comapnions matrices: [Poly(x^9 + x^8 + x^6 + x^3 + x + 1, GF(2))]
 [0, 0, 0, 0, 0, 0, 0, 1, 1]
 
 -------------------------------- 
-We founded 217 equivalence classes. 
-We founded 111 tuples such that ord(A)=ord(B)=p for some prime p. 
-We founded 53 tuples such that ord(A)=p for some prime p and B=I_9. 
-We founded 53 tuples such that A=I_9 and ord(B)=p for some prime p. 
+We have found 217 equivalence classes. 
+We have found 111 tuples such that ord(A)=ord(B)=p for some prime p. 
+We have found 53 tuples such that ord(A)=p for some prime p and B=I_9. 
+We have found 53 tuples such that A=I_9 and ord(B)=p for some prime p. 
 They are: 
 
 -------------------------------------------------------------------------------- 

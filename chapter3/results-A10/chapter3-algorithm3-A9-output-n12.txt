@@ -1,6 +1,6 @@
 Attachment A.10 for n=12
 
-For dimension 12 we founded 96 RCF matrices. They are: 
+For dimension 12 we have found 96 RCF matrices. They are: 
 Order of the RCF matrix: 2
 Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
 [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -1442,10 +1442,10 @@ Polynomials of comapnions matrices: [Poly(x^12 + x^11 + x^10 + x^9 + x^8 + x^7 +
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
 
 -------------------------------- 
-We founded 536 equivalence classes. 
-We founded 344 tuples such that ord(A)=ord(B)=p for some prime p. 
-We founded 96 tuples such that ord(A)=p for some prime p and B=I_12. 
-We founded 96 tuples such that A=I_12 and ord(B)=p for some prime p. 
+We have found 536 equivalence classes. 
+We have found 344 tuples such that ord(A)=ord(B)=p for some prime p. 
+We have found 96 tuples such that ord(A)=p for some prime p and B=I_12. 
+We have found 96 tuples such that A=I_12 and ord(B)=p for some prime p. 
 They are: 
 
 -------------------------------------------------------------------------------- 

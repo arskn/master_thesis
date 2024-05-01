@@ -1,6 +1,6 @@
 Attachment A.10 for n=6
 
-For dimension 6 we founded 18 RCF matrices. They are: 
+For dimension 6 we have found 18 RCF matrices. They are: 
 Order of the RCF matrix: 2
 Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
 [1, 0, 0, 0, 0, 0]
@@ -164,10 +164,10 @@ Polynomials of comapnions matrices: [Poly(x^6 + x^5 + x^4 + x^3 + x^2 + x + 1, G
 [0, 0, 0, 0, 1, 1]
 
 -------------------------------- 
-We founded 74 equivalence classes. 
-We founded 38 tuples such that ord(A)=ord(B)=p for some prime p. 
-We founded 18 tuples such that ord(A)=p for some prime p and B=I_6. 
-We founded 18 tuples such that A=I_6 and ord(B)=p for some prime p. 
+We have found 74 equivalence classes. 
+We have found 38 tuples such that ord(A)=ord(B)=p for some prime p. 
+We have found 18 tuples such that ord(A)=p for some prime p and B=I_6. 
+We have found 18 tuples such that A=I_6 and ord(B)=p for some prime p. 
 They are: 
 
 -------------------------------------------------------------------------------- 

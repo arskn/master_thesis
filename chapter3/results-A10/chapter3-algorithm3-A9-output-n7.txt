@@ -1,6 +1,6 @@
 Attachment A.10 for n=7
 
-For dimension 7 we founded 36 RCF matrices. They are: 
+For dimension 7 we have found 36 RCF matrices. They are: 
 Order of the RCF matrix: 2
 Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
 [1, 0, 0, 0, 0, 0, 0]
@@ -362,10 +362,10 @@ Polynomials of comapnions matrices: [Poly(x^7 + x^5 + x^4 + x^3 + x^2 + x + 1, G
 [0, 0, 0, 0, 0, 1, 0]
 
 -------------------------------- 
-We founded 128 equivalence classes. 
-We founded 56 tuples such that ord(A)=ord(B)=p for some prime p. 
-We founded 36 tuples such that ord(A)=p for some prime p and B=I_7. 
-We founded 36 tuples such that A=I_7 and ord(B)=p for some prime p. 
+We have found 128 equivalence classes. 
+We have found 56 tuples such that ord(A)=ord(B)=p for some prime p. 
+We have found 36 tuples such that ord(A)=p for some prime p and B=I_7. 
+We have found 36 tuples such that A=I_7 and ord(B)=p for some prime p. 
 They are: 
 
 -------------------------------------------------------------------------------- 

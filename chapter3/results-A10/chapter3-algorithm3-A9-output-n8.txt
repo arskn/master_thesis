@@ -1,6 +1,6 @@
 Attachment A.10 for n=8
 
-For dimension 8 we founded 41 RCF matrices. They are: 
+For dimension 8 we have found 41 RCF matrices. They are: 
 Order of the RCF matrix: 2
 Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
 [1, 0, 0, 0, 0, 0, 0, 0]
@@ -453,10 +453,10 @@ Polynomials of comapnions matrices: [Poly(x^8 + x^7 + x^6 + x^4 + x^2 + x + 1, G
 [0, 0, 0, 0, 0, 0, 1, 1]
 
 -------------------------------- 
-We founded 157 equivalence classes. 
-We founded 75 tuples such that ord(A)=ord(B)=p for some prime p. 
-We founded 41 tuples such that ord(A)=p for some prime p and B=I_8. 
-We founded 41 tuples such that A=I_8 and ord(B)=p for some prime p. 
+We have found 157 equivalence classes. 
+We have found 75 tuples such that ord(A)=ord(B)=p for some prime p. 
+We have found 41 tuples such that ord(A)=p for some prime p and B=I_8. 
+We have found 41 tuples such that A=I_8 and ord(B)=p for some prime p. 
 They are: 
 
 -------------------------------------------------------------------------------- 

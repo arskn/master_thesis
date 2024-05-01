@@ -1,6 +1,6 @@
 Attachment A.10 for n=4
 
-For dimension 4 we founded 7 RCF matrices. They are: 
+For dimension 4 we have found 7 RCF matrices. They are: 
 Order of the RCF matrix: 2
 Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
 [1, 0, 0, 0]
@@ -51,10 +51,10 @@ Polynomials of comapnions matrices: [Poly(x^4 + x^3 + x^2 + x + 1, GF(2))]
 [0, 0, 1, 1]
 
 -------------------------------- 
-We founded 25 equivalence classes. 
-We founded 11 tuples such that ord(A)=ord(B)=p for some prime p. 
-We founded 7 tuples such that ord(A)=p for some prime p and B=I_4. 
-We founded 7 tuples such that A=I_4 and ord(B)=p for some prime p. 
+We have found 25 equivalence classes. 
+We have found 11 tuples such that ord(A)=ord(B)=p for some prime p. 
+We have found 7 tuples such that ord(A)=p for some prime p and B=I_4. 
+We have found 7 tuples such that A=I_4 and ord(B)=p for some prime p. 
 They are: 
 
 -------------------------------------------------------------------------------- 

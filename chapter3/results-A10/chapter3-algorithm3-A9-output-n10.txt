@@ -1,6 +1,6 @@
 Attachment A.10 for n=10
 
-For dimension 10 we founded 77 RCF matrices. They are: 
+For dimension 10 we have found 77 RCF matrices. They are: 
 Order of the RCF matrix: 2
 Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
 [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -1003,10 +1003,10 @@ Polynomials of comapnions matrices: [Poly(x^10 + x^9 + x^8 + x^7 + x^6 + x^5 + x
 [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
 
 -------------------------------- 
-We founded 401 equivalence classes. 
-We founded 247 tuples such that ord(A)=ord(B)=p for some prime p. 
-We founded 77 tuples such that ord(A)=p for some prime p and B=I_10. 
-We founded 77 tuples such that A=I_10 and ord(B)=p for some prime p. 
+We have found 401 equivalence classes. 
+We have found 247 tuples such that ord(A)=ord(B)=p for some prime p. 
+We have found 77 tuples such that ord(A)=p for some prime p and B=I_10. 
+We have found 77 tuples such that A=I_10 and ord(B)=p for some prime p. 
 They are: 
 
 -------------------------------------------------------------------------------- 

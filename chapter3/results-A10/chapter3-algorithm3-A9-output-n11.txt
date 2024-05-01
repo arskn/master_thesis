@@ -1,6 +1,6 @@
 Attachment A.10 for n=11
 
-For dimension 11 we founded 87 RCF matrices. They are: 
+For dimension 11 we have found 87 RCF matrices. They are: 
 Order of the RCF matrix: 2
 Polynomials of comapnions matrices: [Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x + 1, GF(2)), Poly(x^2 + 1, GF(2))]
 [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -1220,10 +1220,10 @@ Polynomials of comapnions matrices: [Poly(x^11 + x^9 + x^7 + x^6 + x^5 + x + 1, 
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
 
 -------------------------------- 
-We founded 431 equivalence classes. 
-We founded 257 tuples such that ord(A)=ord(B)=p for some prime p. 
-We founded 87 tuples such that ord(A)=p for some prime p and B=I_11. 
-We founded 87 tuples such that A=I_11 and ord(B)=p for some prime p. 
+We have found 431 equivalence classes. 
+We have found 257 tuples such that ord(A)=ord(B)=p for some prime p. 
+We have found 87 tuples such that ord(A)=p for some prime p and B=I_11. 
+We have found 87 tuples such that A=I_11 and ord(B)=p for some prime p. 
 They are: 
 
 -------------------------------------------------------------------------------- 
