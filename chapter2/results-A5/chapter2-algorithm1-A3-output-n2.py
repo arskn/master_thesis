@@ -5,10 +5,10 @@
 """
 The algorithm run with parametr for dimension equal to: 2
 The number of founded functions: 192
-The founded functions are:
+The found functions are:
 """
 
-def all_founded_functions():
+def all_found_functions():
     return [[0, 1, 0, 2],
 [0, 1, 0, 0],
 [0, 1, 0, 3],
