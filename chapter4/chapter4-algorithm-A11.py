@@ -1,13 +1,19 @@
 """
+---------------
 Attachment A.11
+---------------
 
 Algotithm 4 - algorithm for finding a APN function G:F_2^(n-1) -> F_2^(n-1) which represents the APN function from the trim spectrum of a give function F (if such APN trim exists) 
 
 REFERENCES: Chapter 4 of the thesis
-            [1] - Christof Beirle, Gregor Leander and Leo Perrin - Trims and extensions of quadratic APN functions
-            [8] - LPP-crypto/sboxu: Tools for studying S-boxes (https://github.com/lpp-crypto/sboxU)
-"""
+            [5] - Christof Beirle, Gregor Leander and Leo Perrin - Trims and extensions of quadratic APN functions
+            [14] - LPP-crypto/sboxu: Tools for studying S-boxes (https://github.com/lpp-crypto/sboxU)
 
+REQUIREMENTS:  - Python (version 3.12.2 was used), Python Software Foundation, https://www.python.org
+               - Sage, the Sage MAthematical Software System (version 9.0 was used), Sage Developers, https://www.sagemath.org
+			   - Cython Module for Python, Cython Developers, https://cython.readthedocs.io/en/latest/index.html
+"""
+# using tools provided by [14]
 from sboxU import *
 import numpy as np
 
@@ -30,7 +36,7 @@ def Inner_Product(a,b):
 
 
 # function which computes the trim spectrum for a given function F
-# the function follows the theory in the thesis which is based on theory provided in [1]
+# the function follows the theory in the thesis which is based on theory provided in [5]
 # INPUT:  - list "F" which is a look-up table of a function F
 #         - integer "n", which is dimension of the function F
 # OUTPUT: - list "trims" which contains all functions from the trim spectrum of F
@@ -203,7 +209,7 @@ def Find_Function_G(alpha,gamma,trim,m):
 
 
 
-# function which saves all founded values from the algorithm into the .txt file
+# function which saves all found values from the algorithm into the .txt file
 # INPUT:  - list "trims" which contains all APN trims in a form of look-up table which contains value "init_value" on 2**(n-1) positions
 #         - list "parameters" that contains "alpha", "beta", "gamma", "epsilon" which are parameters for which we can get APN trim from the input function
 #         - list "functions_with_APN_trims" that contains all input functions, which have APN function in their trim spectrum
@@ -313,18 +319,18 @@ def Print_Founded_Functions_Into_File(trims,parameters,functions_with_APN_trims,
 # 1st PART - choosing input file with APN functions
 
 """
+Based on which foud group of quadratic APN functions from the subsection 2.3.2 (attachment A.5) or from [14] we want to examine we can ucomment desired following lines.
+
 n = 7
+# using functions provided by [14]
 load("sboxU/known_functions/sevenBitAPN.py")
 functions = all_quadratics()
 
 
 
-
-
 n = 6
-load("FINAL_PROGRAMS/chapter4-results/chapter4-algorithm4-A11-output-n7.py")
+load("chapter4/results-A12/chapter4-algorithm4-A11-output-n7.py")
 functions = classified_functions_G()
-
 
 n = 6
 # representatives of classes 10 and 13 which does not appear in trim spectra of any 7-bit quadratic APN function
@@ -335,12 +341,9 @@ functions = [
 
 
 
-
-
 n = 5
-load("FINAL_PROGRAMS/chapter4-results/chapter4-algorithm4-A11-output-n6.py")
+load("chapter4/results-A12/chapter4-algorithm4-A11-output-n6.py")
 functions = classified_functions_G()
-
 
 """
 
@@ -409,13 +412,13 @@ Print_Founded_Functions_Into_File(list_of_APN_trims,list_of_parameters,list_of_f
 # OUTPUT: list "mapping"
 def Can_Basis_Really_Generate_All_Elements(basis,elements,dimension):
     combinations_of_coefficients = Create_Arrays_of_Binary_Notation_For_Inputs(dimension)
-    was_element_founded = [0]*len(elements)
+    was_element_found = [0]*len(elements)
     index = 0
     # since the list "combinations_of_coefficients" does not contain combination "[0, 0, ..., 0]", we need solve this case separately
     while ((elements[index]!=0) & (index<len(elements)-1)):
         index = index + 1
     if (elements[index] == 0):
-        was_element_founded[index]=1
+        was_element_found[index]=1
     for combination in combinations_of_coefficients:
         s = 0
         for i in range(len(combination)):
@@ -424,8 +427,8 @@ def Can_Basis_Really_Generate_All_Elements(basis,elements,dimension):
         while ((elements[index]!=s) & (index<len(elements)-1)):
             index = index + 1
         if (elements[index] == s):
-            was_element_founded[index]=1
-    if (sum(was_element_founded) == len(elements)):
+            was_element_found[index]=1
+    if (sum(was_element_found) == len(elements)):
         return (1)
     else:
         return (0)
