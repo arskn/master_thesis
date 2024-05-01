@@ -1,18 +1,24 @@
 """
-Attachment A3
+--------------
+Attachment A.3
+--------------
 
 Algorithm 1 - algorithm for finding all quadratic APN vectorial Boolean function in a given dimension n
 
 REFERENCES: subsection 2.3.2
-			[8] - LPP-crypto/sboxu: Tools for studying S-boxes (https://github.com/lpp-crypto/sboxU)
-			[9] - Christof Beirle and Gregor Leander - New instances of quadratic APN functions
-	    	[10] - Christof Beirle, Marcus Brinkmann and Gregor Leander - Linearly self-equivalent APN permutations in small dimention
+			[14] - LPP-crypto/sboxu: Tools for studying S-boxes (https://github.com/lpp-crypto/sboxU)
+			[2] - Christof Beirle and Gregor Leander - New instances of quadratic APN functions
+	    	[3] - Christof Beirle, Marcus Brinkmann and Gregor Leander - Linearly self-equivalent APN permutations in small dimention
+
+REQUIREMENTS:  - Python (version 3.12.2 was used), Python Software Foundation, https://www.python.org
+               - Sage, the Sage MAthematical Software System (version 9.0 was used), Sage Developers, https://www.sagemath.org
+			   - Cython Module for Python, Cython Developers, https://cython.readthedocs.io/en/latest/index.html
 """
 
 
 # "random" is used to generate random values in the functions
 import random
-# package "sboxU" contains useful method Integer [8]
+# package "sboxU" contains useful method Integer [14]
 from sboxU import Integer
 
 
@@ -92,7 +98,7 @@ def Vector_Ordering(a,b):
 
 
 # function to add information to the DDT list while the algorithm is running
-# this function is taken from [10] and is described in more detail in the thesis
+# this function is taken from [3] and is described in more detail in the thesis
 # INPUT: integer "x" representing the input of the function
 # OUTPUT: 1 if the function is still APN, otherwise 0
 def Add_DDT_Information(x):
@@ -108,7 +114,7 @@ def Add_DDT_Information(x):
 
 
 # function to remove information from the DDT list while the algorithm is running
-# this function is taken from [10]
+# this function is taken from [3]
 # INPUT: integer "x" representing the input of the function
 # OUTPUT: 0
 def Remove_DDT_Information(x):
@@ -124,7 +130,7 @@ def Remove_DDT_Information(x):
 
 
 # function that checks if the condition for coefficients in ANF is not violated (Observation 14 from the thesis)
-# this function is taken from [9] and is described in more detail in the thesis
+# this function is taken from [2] and is described in more detail in the thesis
 # INPUT: integer "x" representing the input of the function
 # OUTPUT: 1 if the function is still quadratic, otherwise 0
 def Add_Degree_Information(x):
@@ -143,7 +149,7 @@ def Add_Degree_Information(x):
 
 
 # function that removes sbox[u] from the xor for the coefficients of the ANF during the step from "depth" to "depth-1" in the "nextVal" function
-# this function is taken from [9]
+# this function is taken from [2]
 # INPUT: integer "x" representing the input of the function
 # OUTPUT: 0/1
 def Remove_Degree_Information(x):
@@ -162,7 +168,7 @@ def Remove_Degree_Information(x):
 
 
 # function tries, if the point "x" with value "sbox[x]" does not violate the APN condition
-# this function is taken from [9] and is described in more detail in the thesis
+# this function is taken from [2] and is described in more detail in the thesis
 # INPUT: integer "x" representing the input of the function
 # OUTPUT: 1 if the "x" was successfully added, otherwise 0
 def Add_Point(x):
@@ -172,7 +178,7 @@ def Add_Point(x):
 
 
 # function that removes the points "x" with value "sbox[x]" 
-# this function is taken from [9]
+# this function is taken from [2]
 # INPUT: integer "x" representing the input to the function
 # OUTPUT: None
 def Remove_Point(x):
@@ -181,7 +187,7 @@ def Remove_Point(x):
 
 
 # function that checks if the given list "array" contains "init_value" at any position
-# this function is mentioned in [9]
+# this function is mentioned in [2]
 # INPUT: list "array"
 # OUTPUT: 0 if the list contains the value "init_value", otherwise 1
 def Is_Complete(array):
@@ -192,27 +198,27 @@ def Is_Complete(array):
 	return(1)
 
 
-# function prints all the functions that are found into the file "chapter2-algorithm1-all_functions-output.txt"
+# function prints all the functions that are found into the file "chapter2-algorithm1-A3-output.txt"
 # INPUT: - list "source" containing the functions in the form of a look-up table
 #        - integer "dimension"
 # OUTPUT: None
 def Print_Founded_Functions_Into_File(source,dimension):
-	with open('chapter2-algorithm1-all_functions-output.txt','w') as output_file:
+	with open('chapter2-algorithm1-A3-output.txt','w') as output_file:
 		output_file.write('The algorithm run with parametr for dimension equal to: ')
 		output_file.write(str(dimension))
 		output_file.write('\n')
-		output_file.write('The number of founded functions: ')
+		output_file.write('The number of found functions: ')
 		output_file.write(str(len(source)))
 		output_file.write('\n')
-		output_file.write('The founded functions are:\n')
+		output_file.write('The found functions are:\n')
 	for i in range(len(source)):
-		with open('chapter2-algorithm1-all_functions-output.txt','a') as output_file:
+		with open('chapter2-algorithm1-A3-output.txt','a') as output_file:
 			output_file.write(str(source[i]))
 			output_file.write('\n')
 
 
 # function to find a quadratic APN function by setting a new value for "x" to "sbox[x]" and checking, if the function can still be quadratic and APN
-# this function is taken from [9] and described in more detial in the thesis; however, it has been modified, because in [9] there were mystakes that made the function unexecutable
+# this function is taken from [2] and described in more detial in the thesis; however, it has been modified, because in [2] there were mystakes that made the function unexecutable
 # INPUT: integer "x"
 # OUTPUT: None
 def Next_Val(x):
@@ -267,7 +273,7 @@ Next_Val(0)
 Print_Founded_Functions_Into_File(output_sboxes, n)
 print('The number of quadratic APN vectorial Boolean functions found: ', len(output_sboxes))
 print()
-print('Found functions are listed in the txt file (chapter2-algorithm1-all_functions-output.txt).')
+print('Found functions are listed in the txt file (chapter2-algorithm1-A3-output.txt).')
 
 
 
