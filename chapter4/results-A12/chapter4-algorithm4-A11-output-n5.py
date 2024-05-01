@@ -14,7 +14,7 @@ REFERENCES: Chapter 4 of the thesis
 The number of input functions that have an APN trim in their trim spectrum: 2
 The number of input functions which have no APN trim in their trim spectrum: 0
 The dimension of the functions G: 4
-The number of quadratic functions among the founded APN trims: 2 (using the observation from Chapter 2 of the thesis)
+The number of quadratic functions among the found APN trims: 2 (using the observation from Chapter 2 of the thesis)
 The number of EA-equivalence classes of functions G: 1 (using the "Algorithm 2 - modified")
 """
 
