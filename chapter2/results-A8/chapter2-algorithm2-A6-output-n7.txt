@@ -1,8 +1,8 @@
 Attachement A8 - for n=7
 
 The algorithm run with parametr for dimension equal to: 7
-The number of founded EA-equivalent classes: 2
-The founded EA-equivalent classes are:
+The number of found EA-equivalent classes: 2
+The found EA-equivalent classes are:
 The class number: 1
 [85, 55, 114, 79, 81, 80, 11, 85, 74, 113, 41, 77, 101, 61, 123, 124, 48, 17, 89, 39, 62, 124, 42, 55, 100, 28, 73, 110, 65, 90, 17, 85, 126, 96, 10, 75, 98, 31, 107, 73, 54, 113, 6, 30, 1, 37, 76, 55, 18, 79, 40, 42, 4, 58, 67, 34, 17, 21, 111, 52, 44, 75, 47, 23, 0, 102, 118, 79, 83, 86, 88, 2, 102, 89, 84, 52, 30, 66, 81, 82, 57, 28, 1, 123, 96, 38, 37, 60, 20, 104, 104, 75, 102, 121, 103, 39, 37, 63, 0, 69, 110, 23, 54, 16, 20, 87, 117, 105, 116, 84, 104, 23, 21, 76, 126, 120, 84, 110, 66, 39, 111, 111, 64, 31, 5, 102, 87, 107],
 

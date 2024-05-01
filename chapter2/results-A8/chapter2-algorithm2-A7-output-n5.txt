@@ -1,8 +1,8 @@
 Attachement A8 - for n=5
 
 The algorithm run with parametr for dimension equal to: 5
-The number of founded EA-equivalent classes: 2
-The founded EA-equivalent classes are:
+The number of found EA-equivalent classes: 2
+The found EA-equivalent classes are:
 The class number: 1
 [0, 12, 3, 18, 8, 24, 18, 31, 3, 12, 22, 4, 0, 19, 12, 2, 27, 30, 13, 21, 0, 25, 15, 11, 8, 14, 8, 19, 24, 2, 1, 6],
 [0, 12, 3, 18, 8, 24, 18, 31, 3, 12, 22, 4, 0, 19, 12, 2, 27, 30, 13, 21, 5, 28, 10, 14, 3, 5, 3, 24, 22, 12, 15, 8],
